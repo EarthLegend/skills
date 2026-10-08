@@ -18,9 +18,7 @@ A search finds the best few matches. A classifier labels every place in an area,
 
 ## Choose the index
 
-- **naip**: the contiguous US, 2020-2024, places about 150 m across (about 40 to a km²), searchable in words. Use it when some targets are under 1 km across.
-- **s2**: the world's land, monthly from 2017, places about 1.2 km across. Use it outside the US, when every target fills a place (mines, lakes over about 3 km², forests, burn scars), or for dates after 2024.
-- A target much narrower than a place is under-found on either index: a 30 m grass airstrip on naip, a lake under 3 km² on s2. A target under 1 km across outside the US is beyond both. Tell the person.
+Choose naip or s2 with the `selecting-index` skill. To find every target, the index must see the smallest: naip when some targets are under 1 km across, s2 only when every target fills a place. Tell the person what will be under-found.
 
 ## Reading the tools
 
