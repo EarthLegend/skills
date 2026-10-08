@@ -1,5 +1,5 @@
 ---
-name: map-in-area
+name: find-in-area
 description: Find every place of one kind in an area with an LGND Geo classifier, a wall-to-wall map and count where a search gives the best few. Use when the person wants all of a kind of place in an area, or how many there are.
 ---
 
