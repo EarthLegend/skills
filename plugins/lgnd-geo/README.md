@@ -20,14 +20,14 @@ The first Geo tool call opens a sign-in to your LGND account. Free accounts have
 
 ## Skills
 
-### map-in-area
+### find-in-area
 
 Finds every place of one kind in an area, such as solar farms, wind turbines, lakes or quarries, and answers where they are and roughly how many there are. A search returns only the best few matches. This skill instead builds a classifier from checked examples, labels every place in the area, checks a sample of the result, and groups the labelled places into sites.
 
 You can ask plainly, or call the skill by name. Name a place and roughly how big an area to cover:
 
 ```
-/lgnd-geo:map-in-area How many wind turbines are there in an area about 10 km across,
+/lgnd-geo:find-in-area How many wind turbines are there in an area about 10 km across,
 around Ellsworth, Illinois? Where are they?
 ```
 
@@ -49,4 +49,4 @@ What to expect:
 ## Notes
 
 - Building a classifier can take a few minutes, so the plugin sets a 6-minute tool timeout in `.mcp.json`.
-- To use it with other agents, point your MCP client at `https://geo.lgnd.ai/mcp`, which signs in with OAuth, and give the agent `skills/map-in-area/SKILL.md`.
+- To use it with other agents, point your MCP client at `https://geo.lgnd.ai/mcp`, which signs in with OAuth, and give the agent `skills/find-in-area/SKILL.md`.
