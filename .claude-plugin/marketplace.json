@@ -10,7 +10,7 @@
       "name": "lgnd-geo",
       "source": "./plugins/lgnd-geo",
       "description": "LGND Geo: the Geo MCP server (search, discover, classify and check places on Earth from imagery embeddings) and the skills that drive it.",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "author": {
         "name": "LGND",
         "url": "https://github.com/EarthLegend"
