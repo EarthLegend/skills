@@ -46,7 +46,27 @@ What to expect:
 - **A checked count, on request:** when the count is uncertain, the answer offers one, with its cost in calls. It makes those calls only if you ask.
 - **Narrow targets:** things much narrower than a place, such as grass airstrips or small pond dams, are mostly missed. The answer says so.
 
+### geo-basics
+
+How to answer with LGND Geo. It covers:
+
+- **What imagery can and can't answer:** counts and official figures start from a published list, and live conditions from live sources.
+- **What to report:** only what the imagery check confirmed, with its date, coordinates and node ids.
+- **How to read the numbers:** what similarity scores and classifier counts do and don't mean.
+
+### selecting-index
+
+Chooses the index, the level and the dates for a question:
+
+- **The index:** naip (US aerial photos, places about 150 m across) or s2 (Sentinel-2 worldwide, places about 1.2 km across).
+- **The level:** single images or cells.
+- **The dates:** a clear time window.
+
+`find-in-area` uses it to pick its index.
+
+Claude uses `geo-basics` and `selecting-index` on its own when a question needs them, so you don't need to call them by name.
+
 ## Notes
 
 - Building a classifier can take a few minutes, so the plugin sets a 6-minute tool timeout in `.mcp.json`.
-- To use it with other agents, point your MCP client at `https://geo.lgnd.ai/mcp`, which signs in with OAuth, and give the agent `skills/find-in-area/SKILL.md`.
+- To use it with other agents, point your MCP client at `https://geo.lgnd.ai/mcp`, which signs in with OAuth, and give the agent the `SKILL.md` files under `skills/`.
