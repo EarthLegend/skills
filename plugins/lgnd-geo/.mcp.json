@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "lgnd-geo": {
+      "type": "http",
+      "url": "https://geo.lgnd.ai/mcp",
+      "timeout": 360000
+    }
+  }
+}
