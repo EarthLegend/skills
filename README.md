@@ -4,11 +4,11 @@ LGND agent skills and plugins for geospatial search over satellite and aerial im
 
 ## Plugins
 
-| Plugin | Skills | What it does |
-|---|---|---|
-| [`lgnd-geo`](plugins/lgnd-geo) | `find-in-area`, `geo-basics`, `selecting-index` | Connects Claude to the LGND Geo server, which searches, views, classifies and checks places from imagery embeddings. `find-in-area` finds every place of one kind in an area (solar farms, wind turbines, lakes…) and says where they are and roughly how many. `geo-basics` covers how to answer with Geo, and `selecting-index` chooses the imagery, scale and dates. |
+| Plugin | What it does |
+|---|---|
+| [`lgnd-geo`](plugins/lgnd-geo) | Connects Claude to the LGND Geo server, which searches, views, classifies and checks places on Earth from imagery embeddings, and adds the skills that use it. |
 
-Each plugin's README covers what it needs, what it costs and its limits. Release notes are in [CHANGELOG.md](CHANGELOG.md).
+Each plugin's README lists its skills, and covers what it needs, what it costs and its limits. Release notes are in [CHANGELOG.md](CHANGELOG.md).
 
 ## Install
 
